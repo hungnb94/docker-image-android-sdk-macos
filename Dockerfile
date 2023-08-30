@@ -30,8 +30,7 @@ RUN /opt/tools/cmdline_tools.sh
 
 RUN yes | sdkmanager --licenses
 
-RUN sdkmanager "cmdline-tools;latest"
-
+# RUN sdkmanager "cmdline-tools;latest"
 RUN sdkmanager "platforms;${PLATFORM_VERSION}"
 RUN sdkmanager "platform-tools"
 
